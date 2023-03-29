@@ -1,0 +1,194 @@
+{
+  "name": "backbutton",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "88vyDk5x4LrRfFpGAYnh2N",
+    "node": "178:141",
+    "version": "3246179182",
+    "component-id": "b96207522c18b712ff0d88e3595bf6130fef266e"
+  },
+  "default": "backbutton",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "background"
+      },
+      {
+        "type": "text",
+        "id": "buttontitle"
+      },
+      {
+        "type": "group",
+        "id": "cross"
+      },
+      {
+        "type": "image",
+        "id": "image 9"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 13"
+      }
+    ],
+    "modes": {
+      "backbutton": {
+        "rules": [
+          {
+            "id": "top_level",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "8.0",
+              "offset-x": "4.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "tap-handler": "$backtaped",
+            "is-structured": "false",
+            "children": [
+              "background",
+              "buttontitle",
+              "cross"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "background",
+            "border-radius": "14.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "background.svg"
+          },
+          {
+            "id": "buttontitle",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "27.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "7.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "41.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "15.0"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$buttontitle",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "bottom",
+            "line-height": "1.185000010899135",
+            "typeface": "Rubik"
+          },
+          {
+            "id": "cross",
+            "margin": {
+              "left": "4.0",
+              "top": "4.0",
+              "right": "52.0",
+              "bottom": "4.0"
+            },
+            "is-structured": "false",
+            "children": [
+              "image 9",
+              "Rectangle 13"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "image 9",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              }
+            },
+            "image-content": "image_9.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Rectangle 13",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              }
+            },
+            "vector-content": "rectangle_13.svg"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "backtaped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "buttontitle": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "backbutton",
+      "size": {
+        "width": 76.0,
+        "height": 28.0
+      },
+      "parameters": {
+        "buttontitle": "Назад"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

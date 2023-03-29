@@ -1,0 +1,168 @@
+{
+  "name": "greeting",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "88vyDk5x4LrRfFpGAYnh2N",
+    "node": "107:165",
+    "version": "3246179182",
+    "component-id": "fa468faa83c3c9cc299c804398a80e1dcb1449df"
+  },
+  "default": "Greeting",
+  "documentation": "Greeting for user in main screen",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "avatar"
+      },
+      {
+        "type": "text",
+        "id": "meetyou"
+      },
+      {
+        "type": "text",
+        "id": "username"
+      }
+    ],
+    "modes": {
+      "Greeting": {
+        "rules": [
+          {
+            "id": "top_level",
+            "tap-handler": "$greeting_taped",
+            "is-structured": "false",
+            "children": [
+              "avatar",
+              "meetyou",
+              "username"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "avatar",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "64.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "64.0"
+              }
+            },
+            "vector-content": "avatar.svg"
+          },
+          {
+            "id": "meetyou",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "75.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "36.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "256.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "13.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.4"
+            },
+            "text-content": "Рады Вас видеть!",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "bottom",
+            "text-size": "12.0",
+            "line-height": "1.184999942779541",
+            "typeface": "Rubik"
+          },
+          {
+            "id": "username",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "74.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "11.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "256.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "22.0"
+              }
+            },
+            "font-weight": "800.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$greet_user",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "bottom",
+            "text-size": "16.0",
+            "line-height": "1.184999942779541",
+            "typeface": "Rubik"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "greeting_taped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": "Move user to profile page"
+    },
+    "greet_user": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Greeting",
+      "size": {
+        "width": 331.0,
+        "height": 64.0
+      },
+      "parameters": {
+        "greet_user": "Здравствуйте"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

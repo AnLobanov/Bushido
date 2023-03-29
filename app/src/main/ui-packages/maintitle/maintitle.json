@@ -1,0 +1,140 @@
+{
+  "name": "maintitle",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "88vyDk5x4LrRfFpGAYnh2N",
+    "node": "151:190",
+    "version": "3246179182",
+    "component-id": "8d3712ed9a3d6b59e049114cf1a71efb8c168678"
+  },
+  "default": "maintitle",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "subbutton"
+      },
+      {
+        "type": "text",
+        "id": "title"
+      }
+    ],
+    "modes": {
+      "maintitle": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "subbutton",
+              "title"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "subbutton",
+            "margin": {
+              "right": "181.0",
+              "bottom": "3.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$title",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "16.0",
+            "line-height": "1.184999942779541",
+            "typeface": "Rubik"
+          },
+          {
+            "id": "title",
+            "margin": {
+              "left": "249.0",
+              "top": "3.0"
+            },
+            "tap-handler": "$subbuttontaped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.4"
+            },
+            "text-content": "$subbutton",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "12.0",
+            "line-height": "1.184999942779541",
+            "typeface": "Rubik"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "title": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "subbutton": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "subbuttontaped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "maintitle",
+      "size": {
+        "width": 308.0,
+        "height": 18.0
+      },
+      "parameters": {
+        "title": "Закреплённое",
+        "subbutton": "Все цели"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

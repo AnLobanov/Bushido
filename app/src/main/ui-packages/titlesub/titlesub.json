@@ -1,0 +1,91 @@
+{
+  "name": "titlesub",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "88vyDk5x4LrRfFpGAYnh2N",
+    "node": "178:142",
+    "version": "3246179182",
+    "component-id": "4a3b9d904fee67e7c60cd958e055f32eda8b2044"
+  },
+  "default": "titlesub",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "titletxt"
+      }
+    ],
+    "modes": {
+      "titlesub": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "titletxt"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "titletxt",
+            "margin": {
+              "right": "253.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.4"
+            },
+            "text-content": "$titletxt",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-align-vertical": "bottom",
+            "line-height": "1.185000010899135",
+            "typeface": "Rubik"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "titletxt": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "titlesub",
+      "size": {
+        "width": 322.0,
+        "height": 16.0
+      },
+      "parameters": {
+        "titletxt": "Название"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
